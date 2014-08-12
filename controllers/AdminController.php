@@ -3,14 +3,8 @@
  * 
  */
 
-class AdminController extends BackendController{
+class AdminController extends CrudController{
 
-    /**
-     *
-     */
-    public function actionIndex()
-    {
-        $this->render('admin');
-    }
+    public $model = 'CustomFieldConfig';
 
-} 
+}
